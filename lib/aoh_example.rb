@@ -29,13 +29,13 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
-  p aoh[row][:key]
+  p aoh[row][key]
 end
 aoh_lookup([{:name=> "Don Gately", :occupation=> "Live-in Staff"},
        {:name=>  "Joelle van Dyne", :occupation=> "Radio Personality"},
        { :name=>  "Pat Monteseian", :occupation=> "Staff" },
        { :name=>  "Kate Gompert", :occupation=> "None" },
-       { :name=>  "Bruce Green", :occupation=> "Fan of Mildred" },2, :name)
+       { :name=>  "Bruce Green", :occupation=> "Fan of Mildred" },2,:name)
 
 def aoh_update(aoh, row, key, new_value)
   # Update the AoH data at row and key to have the value of new_value
