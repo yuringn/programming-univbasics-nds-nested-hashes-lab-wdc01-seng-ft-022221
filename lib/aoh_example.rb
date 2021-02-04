@@ -38,7 +38,8 @@ aoh_lookup([{:name=> "Don Gately", :occupation=> "Live-in Staff"},
        { :name=>  "Bruce Green", :occupation=> "Fan of Mildred" }],2, :name)
 
 def aoh_update(aoh, row, key, new_value)
-  p aoh[row][key]= new_value
+  aoh[row][key]= new_value
+  p aoh
   # Update the AoH data at row and key to have the value of new_value
   # Return the updated AoH
 end
