@@ -29,7 +29,7 @@ def literal_aoh
 end
 
 def aoh_lookup(aoh, row, key)
-  p aoh[row][key]
+  p aoh[row][:key]
 end
 aoh_lookup([{:name=> "Don Gately", :occupation=> "Live-in Staff"},
        {:name=>  "Joelle van Dyne", :occupation=> "Radio Personality"},
